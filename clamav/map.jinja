@@ -68,12 +68,12 @@ that differ from whats in defaults.yaml
         },
         'RedHat': {
           'clamd': {
-            'pkgs': [ 'clamav', 'clamav-scanner-systemd' ],
+            'pkgs': [ 'clamav' ],
             'user': 'clamscan',
             'group': 'clamscan',
             'config_path': '/etc/clamd.d',
             'config_file': 'scan.conf',
-            'service_name': 'clamd@scan',
+            'service_name': 'clamd@',
             'config': {
               'LogSyslog': 'yes',
               'PidFile': '/run/clamd.scan/clamd.pid',
